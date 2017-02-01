@@ -1,0 +1,9 @@
+<h1>Events</h1>
+<p>
+  <%=link_to 'New Events', new_event_path%>
+</p>
+
+<%= @event.each do |event| %>
+  <%= renter 'event', event: event %>
+
+  <% end %>
